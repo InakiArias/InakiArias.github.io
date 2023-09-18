@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bg.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/offer.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <!-- Fonts and Libs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- JS -->
+    <script src="js/header/animateNavigation.js" defer></script>
+    <script src="js/header/animateScroll.js" defer></script>
+    <script src="js/header/toggleMenu.js" defer></script>
+    <script src="js/countdown/countdown.js" defer></script>
+    <script src="js/dropdown/dropdown.js" defer></script>
+    <title>A Better Weight - Home</title>
+</head>
+
+<body>
+
+    <ul id="mobile-menu">
+        <div class="mobile-toggle-btn">
+            <span class="line-1 top-1"></span>
+            <span class="line-1"></span>
+            <span class="line-1 bottom-1"></span>
+        </div>
+        <br>
+        <a class="nav-link active" href="#offer">Offer</a>
+        <a class="nav-link active" href="#stats">Information</a>
+        <a class="nav-link" href="">Book Online</a>
+        <a class="nav-link" href="">Weight Loss Programs</a>
+        <a class="nav-link" href="">Real Patient Stories</a>
+        <a class="nav-link" href="">Locations</a>
+        <a class="nav-link" href="">Blog</a>
+        <a class="nav-link" href="">Subscription</a>
+        <a class="nav-link active" href="#faq">FAQ</a>
+    </ul>
+    <div class="main-wrapper">
+
+
+        <header class="header transparent">
+            <nav class="nav-menu">
+                <img src="assets/logo.svg" alt="">
+
+                <a class="nav-link active" href="#offer">Offer</a>
+                <a class="nav-link active" href="#stats">Information</a>
+                <a class="nav-link" href="">Book Online</a>
+                <a class="nav-link" href="">Weight Loss Programs</a>
+                <a class="nav-link" href="">Real Patient Stories</a>
+                <a class="nav-link" href="">Locations</a>
+                <a class="nav-link" href="">Blog</a>
+                <a class="nav-link" href="">Subscription</a>
+                <a class="nav-link active" href="#faq">FAQ</a>
+
+                <div class="mobile-toggle-btn">
+                    <span class="line-1 top-1"></span>
+                    <span class="line-1"></span>
+                    <span class="line-1 bottom-1"></span>
+                </div>
+
+            </nav>
+        </header>
+        <div id="offer">
+            <div class="circle bright left"></div>
+            <div class="circle right"></div>
+            <div class="rect"></div>
+            <div class="info-box">
+                <h1>Chicago’s <span style="color: #DD71C6">Free</span> Medical Check-Up and Weight Loss Consultation
+                </h1>
+                <p>Limited spots available due to the Physicians schedule and the high demand for service. No credit
+                    card or insurance required.</p>
+            </div>
+            <div class="countdown">
+                <button class="speed-control-btn" onclick="speedDown()"><i class="fas fa-fast-backward"></i></button>
+                <button class="speed-control-btn" onclick="speedUp()"><i class="fas fa-fast-forward"></i></button>
+                <p>Your offer ends in:</p>
+                <br>
+                <div class="countdown-container">
+                    <div class="label">DAYS</div>
+                    <div class="label">HOURS</div>
+                    <div class="label">MINUTES</div>
+                    <div class="label">SECONDS</div>
+                    <div class="content"></div>
+                    <div class="content"></div>
+                    <div class="content"></div>
+                    <div class="content"></div>
+                </div>
+                <p class="offer-ended">Your offer has ended! <i class="fa-solid fa-face-frown"
+                        style="color: #DD71C6; font-size: 2rem; vertical-align: middle;"></i></p>
+            </div>
+            <div class="button-container">
+                <br>
+                <button class="book-appointment-btn">Book my appointment</button>
+            </div>
+        </div>
+        <div id="stats">
+            <div class="circle left"></div>
+            <div class="circle right"></div>
+            <div class="info-container">
+                <div class="info-banner">
+                    <div>
+                        <i class="fa-solid fa-suitcase" style="color: #73C3F4"></i>
+                        <h2>10<span> +</span></h2>
+                    </div>
+                    <p>years in business</p>
+                </div>
+                <div class="info-banner">
+                    <div>
+                        <i class="fa-regular fa-face-smile" style="color: #FFCF54"></i>
+                        <h2>2000<span> +</span></h2>
+                    </div>
+                    <p>positive reviews</p>
+                </div>
+                <div class="info-banner">
+                    <div>
+                        <i class="fa-regular fa-comment" style="color: #DD71C6"></i>
+                        <h2>15.000<span> +</span></h2>
+                    </div>
+                    <p>satisfied clients</p>
+                </div>
+                <div class="info-banner">
+                    <div>
+                        <i class="fa-solid fa-heart-pulse" style="color: #55A201"></i>
+                        <h2>Many<span> +</span></h2>
+                    </div>
+                    <p>nurses and physician assistants on staff</p>
+                </div>
+            </div>
+            <br><br>
+            <button class="book-appointment-btn">Book my appointment</button>
+        </div>
+        <div id="faq">
+            <div class="circle left"></div>
+            <div class="circle right"></div>
+            <div class="circle bottom right"></div>
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-container">
+                <div class="dropdown closed">
+                    <div class="dropdown-header">
+                        <h5>Why is it free?</h5>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown closed">
+                    <div class="dropdown-header">
+                        <h5>Do I need this if I’ve had my yearly medical check? What is the difference?</h5>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown closed">
+                    <div class="dropdown-header">
+                        <h5>Can I bring another person to the appointment?</h5>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown closed">
+                    <div class="dropdown-header">
+                        <h5>How long does it take?</h5>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown closed">
+                    <div class="dropdown-header">
+                        <h5>What if I have to cancel or if I’m not sure I’ll be able to make it?</h5>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown closed">
+                    <div class="dropdown-header">
+                        <h5>Do I need to bring anything with me?</h5>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown closed">
+                    <div class="dropdown-header">
+                        <h5>What if I don’t have insurance?</h5>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown closed">
+                    <div class="dropdown-header">
+                        <h5>Do the weight loss programs you offer work?</h5>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown closed">
+                    <div class="dropdown-header">
+                        <h5>What’s the catch?</h5>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown closed">
+                    <div class="dropdown-header">
+                        <h5>Will I have to exhaust myself in the gym to make it work?</h5>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="dropdown closed">
+                    <div class="dropdown-header">
+                        <h5>Where are you located?</h5>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <br><br><br>
+                <button class="book-appointment-btn">Book my appointment</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

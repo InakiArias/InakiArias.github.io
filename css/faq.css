@@ -1,0 +1,59 @@
+#faq .book-appointment-btn {
+    background: #DD71C6;
+}
+
+#faq .book-appointment-btn:after {
+    background: #a70082;
+}
+
+#faq {
+    background: #eaeaea;
+
+
+    padding-block: 8vh;
+    padding-inline: 20%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+#faq h1 {
+    font-family: "Libre Baskerville";
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+#faq .faq-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vh;
+    z-index: 2000;
+}
+
+#faq h5, #faq p {
+    margin: 0;
+}
+
+#faq .dropdown-header i {
+    font-size: 1.5rem;
+    color: #DD71C6;
+}
+
+#faq .button-container {
+    margin: auto;
+}
+
+@media (width < 480px) {
+    #faq {
+        padding-inline: 5%;
+    }
+}
+

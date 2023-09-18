@@ -1,0 +1,40 @@
+button {
+    background: #FFD900;
+    color: white;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    margin: auto;
+    font-weight: 900;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: padding .5s;
+}
+
+button:after {
+    content: "";
+    /* Change background of button:after to change animation */
+    background: #ff9900;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 550%;
+    margin-left: -3rem !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+button:hover {
+    padding-inline: 1.5rem;
+}

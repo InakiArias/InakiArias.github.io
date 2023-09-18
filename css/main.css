@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body,
+button {
+    font-family: 'Montserrat';
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.main-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-wrapper>div {
+    position: relative;
+    z-index: 2000;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+.hidden {
+    visibility: hidden !important;
+}
